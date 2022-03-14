@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div id=" form-main">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gulliver Traveller</title>
+</head>
+
+<body>
+    <!-- parte superior da tela, a nav -->
+    <header class="header-top">
+        <h2 class="header-title">Gulliver Traveller</h2>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Hospedagem</a></li>
+                <li><a href="">Passeios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- termino da nav -->
+    <section class="container">
+        <form name="dados" id="dados" action="" method="post">
+            <div id="form-div">
+                <section class="about">
+                    <h1>Cadastre aqui um Ponto Turistico</h1>
+                </section>
+                <div class="campos">
+                    <div class="em__linha">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required placeholder="ex: MASP">
+                    </div>
+                    <div class="">
+                        <h3>Localização</h3>
+                        <div class="em__linha">
+                            <label for="rua">Rua</label>
+                            <input type="text" id="rua" required placeholder="ex: Av. Imperatriz Leopoldina">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" required placeholder="ex: 2563">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" required placeholder="ex: Vila Leolpoldina">
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <div class="em__linha">
+                            <label for="cep">Cep</label>
+                            <input type="text" id="cep" required placeholder="ex: 12345-678">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="numero" required placeholder="ex: São Paulo">
+                            <label for="estados">Estado</label>
+                            <input list="uf" id="estados" class="lista" required placeholder="ex: Selecione o estado">
+                        </div>
+                    </div>
+                    <datalist id="uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </datalist>
+                </div>
+                <div class="campos">
+                    <h3>Contato:</h3>
+                    <div class="em__linha">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" required placeholder="ex: 00-1234-5678">
+                        <label for="data">Data do Cadastro</label>
+                        <input type="date" id="data" required>
+                    </div>
+                </div>
+                <div class="campos">
+                    <h3>Outras informações:</h3>
+                    <div class="em__linha">
+                        <label for="tvalor">Ingresso?</label>
+                        <label for="huey">Sim</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <label for="huey">Não</label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <br>
+                        <br>
+                        <label for="tvalor">Valor Ingresso</label>
+                        <input type="number" id="valor" required placeholder="ex: 200.00">
+                        <label for="classificacao">E-mail</label>
+                        <input type="email" id="email" required placeholder="ex: pontoturistico@email.com">
+                        <label for="dataCadastro">Site</label>
+                        <input type="url" id="site" required placeholder="ex: www.pontoturistico.com">
+                    </div>
+                    <br>
+                    <div class="camping">
+                        <label for="informacoes">Deixe um Comentário aqui</label>
+                        <textarea name="" id="informações" placeholder="Informações adicionais" rows="5"
+                            cols="33"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da
+                            empresa
+                        </label>
+                    </div>
+                    <div class="botoes">
+                        <input type="submit" value="Gravar Informações">
+                    </div>
+                </div>
+        </form>
+    </section>
+
+</html>
